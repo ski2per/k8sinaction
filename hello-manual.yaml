@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-manual
+spec:
+  containers:
+  - image: ski2per/hello-python
+    name: hello-python
+    ports:
+    - containerPort: 80
+      protocol: TCP
